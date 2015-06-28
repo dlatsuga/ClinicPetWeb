@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="se:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/se_jar</output-path>
+    <root id="archive" name="se.jar">
+      <element id="module-output" name="se" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.1/commons-lang-2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
