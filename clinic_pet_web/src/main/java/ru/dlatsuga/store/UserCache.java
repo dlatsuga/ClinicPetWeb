@@ -9,9 +9,10 @@ import java.util.Collection;
 public class UserCache implements Storage {
     private static final UserCache INSTANCE = new UserCache();
 
-    private final Storage storage = new JdbcStorage();
-            //new JdbcStorage();
-            //new MemoryStorage();
+    private final Storage storage = new HibernateStorage();
+//            new HibernateStorage();
+//            new JdbcStorage();
+//            new MemoryStorage();
 
     public static UserCache getInstance() {
         return INSTANCE;

@@ -1,12 +1,16 @@
 package ru.dlatsuga.models;
 
+import java.util.List;
+import java.util.Set;
+
 /**
  * Created by Dima on 21.06.2015.
  */
 public class User extends Base {
     private String login;
     private String email;
-//    private Role role;
+    private Role role;
+    private Set<Message> messages;
 
     public User(){}
 
@@ -14,6 +18,22 @@ public class User extends Base {
         this.id = id;
         this.login = login;
         this.email = email;
+    }
+
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
+
+    public Set<Message> getMessages() {
+        return messages;
+    }
+
+    public void setMessages(Set<Message> messages) {
+        this.messages = messages;
     }
 
     public String getLogin() {
